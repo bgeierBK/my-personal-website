@@ -11,7 +11,7 @@ body {
 
 #linkBox{
     display: flex;
-   flex-direction: row-reverse; 
+   flex-direction: row; 
    align-items: center;
    padding: 10px;
 }
@@ -26,3 +26,30 @@ body {
     font-size: large;
     padding: 10px;
 }
+
+#mainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#photo{
+   padding-left: 200px;
+   padding-top: 50px;
+   padding-right: 200px;
+
+}
+
+#mainText p{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+}
+
+
+
+
+
+
+
