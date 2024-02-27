@@ -8,22 +8,49 @@
     <body>
         <div id="header">
             <div id ="name">
-                <h1><strong>Ben Geier</strong></h1>
+                <h1><strong><a href="/Users/ben/Development/code/my-personal-website/index.html">Ben Geier</a></strong></h1>
             </div>
             <div id="linkBox">
                 <div class="link" id="about">
-                    <p><a href="Pages/pages/about.html">About</a></p>
+                    <p><a href="/Users/ben/Development/code/my-personal-website/Pages/pages/about.html">About</a></p>
                 </div>
                 <div class="link" id="portfolio">
-                    <p><a href="Pages/pages/portfolio.html">Portfolio</a></p>
+                    <p><a href="/Users/ben/Development/code/my-personal-website/Pages/pages/portfolio.html">Portfolio</a></p>
                 </div>
                 <div class="link" id="blog">
-                    <p><a href="Pages/pages/blog.html">Blog</a></p>
+                    <p><a href="/Users/ben/Development/code/my-personal-website/Pages/pages/blog.html">Blog</a></p>
                 </div>
                 <div class="link" id="contact">
-                    <p><a href="Pages/pages/contact.html">Contact</a></p>
+                    <p><a href="/Users/ben/Development/code/my-personal-website/Pages/pages/contact.html">Contact</a></p>
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message" rows="4" placeholder="How can I help you"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "geier.benjamin@gmail.com",
+                    Password : "D079FBB2E5B625F79A74CFCBB81768325283",
+                    To : "geier.benjamin@gmail.com",
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
     </body>
 </html>
