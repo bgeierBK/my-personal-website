@@ -101,6 +101,37 @@ form button{
 
 }
 
+.blogHead{
+    text-emphasis: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.blogMain{
+   margin: 50px;
+}
+
+#blogTop{
+    display: flex;
+    justify-content: center;
+}
+
+.blogEntry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogEntry img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: -10;
+   
+}
+
+.blogEntry h3{
+    margin-bottom: -10px
+}
 
 
