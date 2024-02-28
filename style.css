@@ -134,4 +134,15 @@ form button{
     margin-bottom: -10px
 }
 
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
 
+.question{
+    color: gray;
+    font-weight: 300;
+    margin: 100px;
+
+}
